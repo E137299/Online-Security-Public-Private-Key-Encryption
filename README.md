@@ -56,9 +56,9 @@
   
 ### Helpful Function:
 * **ord(character)**
-	* returns the ascii number for a letter/character
+	* returns the unicode number for a letter/character
 * **chr(ascii number)**
-	* returns the letter/character associated to an integer
+	* returns the character that represents the specified unicode.
 ```python
 # Returns a list of all the prime numbers from 2 to n
 def primes_less_than(n):
