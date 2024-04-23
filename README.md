@@ -54,38 +54,16 @@
 	- Input: prime number, prime number, list of containing integer values for each encrypted letter
     - Output: the decrypted message
   
-### Helpful Function:
+### Helpful Functions:
 * **ord(character)**
 	* returns the unicode number for a letter/character
 * **chr(ascii number)**
 	* returns the character that represents the specified unicode.
-```python
-# Returns a list of all the prime numbers from 2 to n
-def primes_less_than(n):
-	all_primes=[]
-	prime = [True for i in range(n + 1)]
-	p = 2
-	while (p * p <= n):
-		if (prime[p] == True):
-			for i in range(p ** 2, n + 1, p):
-				prime[i] = False
-		p += 1
-	prime[0]= False
-	prime[1]= False
-	# Print all prime numbers
-	for p in range(n + 1):
-		if prime[p]:
-			all_primes.append(p)
-	return all_primes
-	
-# These two functions will help determine if two numbers are coprimes #
-# Returns the greatest common denominator for two numbers
- def gcd(p,q):
-    while q != 0:
-        p, q = q, p%q
-    return p
 
-# Determines if two numbers are coprime. Returns True or False
-def is_coprime(x, y):
-    return gcd(x, y) == 1
- ```
+### Provided Functions
+* **primes_less_than(n)**
+	* returns a list of primes from 2 to n
+* **gcd(p,q)**
+	* returns the greatest common denominator of the two parameters
+* **Is_coprime(x,y)**
+	* Determines if two numbers are coprime. Returns True or False
