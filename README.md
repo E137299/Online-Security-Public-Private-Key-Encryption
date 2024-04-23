@@ -16,6 +16,7 @@
 - **enc** =	Encrypted value(integer)
 - **dec** = 	Decrypted value(integer)
 
+<br></br><br></br>
 ### Steps of Encryption:
 1. Pick two prime numbers (**p,q**)
 2. Let **N = p * q**
@@ -27,10 +28,11 @@
 6. Keep **d** secret.
 7. **enc = (v^e) % N**
 
+<br></br><br></br>
 ### Steps of Decryption:
 1. **dec = (enc^d)%N**
   
-
+<br></br><br></br>
 ### Functions To Be Written:
 - **calculate_N(p,q)**:
 	- Input: prime number, prime number
@@ -53,7 +55,8 @@
 - **decrypt_message(n,d,list)**:
 	- Input: prime number, prime number, list of containing integer values for each encrypted letter
     - Output: the decrypted message
-  
+ 
+<br></br><br></br>
 ### Helpful Functions:
 * **ord(character)**
 	* returns the unicode number for a letter/character
@@ -65,5 +68,5 @@
 	* returns a list of primes from 2 to n
 * **gcd(p,q)**
 	* returns the greatest common denominator of the two parameters
-* **Is_coprime(x,y)**
+* **is_coprime(x,y)**
 	* Determines if two numbers are coprime. Returns True or False
